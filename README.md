@@ -1,15 +1,13 @@
 # MoyaHandyJSON
 
-[![CI Status](https://img.shields.io/travis/zys-developer/MoyaHandyJSON.svg?style=flat)](https://travis-ci.org/zys-developer/MoyaHandyJSON)
-[![Version](https://img.shields.io/cocoapods/v/MoyaHandyJSON.svg?style=flat)](https://cocoapods.org/pods/MoyaHandyJSON)
-[![License](https://img.shields.io/cocoapods/l/MoyaHandyJSON.svg?style=flat)](https://cocoapods.org/pods/MoyaHandyJSON)
-[![Platform](https://img.shields.io/cocoapods/p/MoyaHandyJSON.svg?style=flat)](https://cocoapods.org/pods/MoyaHandyJSON)
+允许使用HandyJSON将Response解码为对象的Moya扩展。
+Moya extensions that allow the response to be decoded into objects using the HandyJSON.
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -18,12 +16,8 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'MoyaHandyJSON'
+
+# or
+
+pod 'MoyaHandyJSON/RxSwift'
 ```
-
-## Author
-
-zys-developer, zys666@yeah.net
-
-## License
-
-MoyaHandyJSON is available under the MIT license. See the LICENSE file for more info.

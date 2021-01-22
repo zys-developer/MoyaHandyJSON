@@ -9,34 +9,33 @@
 Pod::Spec.new do |s|
   s.name             = 'MoyaHandyJSON'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MoyaHandyJSON.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Moya extensions that allow the response to be decoded into objects using the HandyJSON.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  允许使用HandyJSON将Response解码为对象的Moya扩展。
+  Moya extensions that allow the response to be decoded into objects using the HandyJSON.
                        DESC
 
   s.homepage         = 'https://github.com/zys-developer/MoyaHandyJSON'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zys-developer' => 'zys666@yeah.net' }
+  s.author           = { 'zys-developer' => 'zys_dev@163.com' }
   s.source           = { :git => 'https://github.com/zys-developer/MoyaHandyJSON.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'MoyaHandyJSON/Classes/**/*'
+  s.default_subspec = "Core"
+  s.swift_version = '4.0'
   
-  # s.resource_bundles = {
-  #   'MoyaHandyJSON' => ['MoyaHandyJSON/Assets/*.png']
-  # }
+  s.subspec "Core" do |ss|
+    ss.source_files  = "Sources/Core/*.swift"
+    ss.dependency "Moya"
+    ss.dependency "HandyJSON"
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec "RxSwift" do |ss|
+    ss.source_files = "Sources/RxSwift/*.swift"
+    ss.dependency "MoyaHandyJSON/Core"
+    ss.dependency "RxSwift"
+    ss.dependency "Moya/RxSwift"
+  end
+  
 end

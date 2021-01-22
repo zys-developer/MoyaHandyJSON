@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MoyaHandyJSON
-//
-//  Created by zys-developer on 01/22/2021.
-//  Copyright (c) 2021 zys-developer. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

@@ -1,13 +1,11 @@
-use_frameworks!
+source 'https://cdn.cocoapods.org/'
+inhibit_all_warnings!
 
 platform :ios, '9.0'
 
 target 'MoyaHandyJSON_Example' do
-  pod 'MoyaHandyJSON', :path => '../'
-
-  target 'MoyaHandyJSON_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'MoyaHandyJSON/RxSwift', :path => '../'
+  pod 'Moya/RxSwift'
+  pod 'HandyJSON'
+  pod 'RxCocoa'
 end
