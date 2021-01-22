@@ -7,7 +7,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if let win = window {
+            let tabbarController = UITabBarController()
+            // 添加子控制器
+            let vc1 = MoyaViewController()
+            vc1.title = "Moya"
+            tabbarController.addChildViewController(vc1)
+            let vc2 = RxSwiftViewController()
+            vc2.title = "RxSwift"
+            tabbarController.addChildViewController(vc2)
+            let vc3 = RxDataSourcesViewController()
+            vc3.title = "RxDataSources"
+            tabbarController.addChildViewController(vc3)
+            win.rootViewController = tabbarController
+        }
         return true
     }
 

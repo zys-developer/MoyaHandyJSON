@@ -8,4 +8,5 @@ target 'MoyaHandyJSON_Example' do
   pod 'Moya/RxSwift'
   pod 'HandyJSON'
   pod 'RxCocoa'
+  pod 'RxDataSources'
 end
