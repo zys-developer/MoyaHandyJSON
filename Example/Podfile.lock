@@ -10,10 +10,10 @@ PODS:
   - Moya/RxSwift (13.0.1):
     - Moya/Core
     - RxSwift (~> 4.0)
-  - MoyaHandyJSON/Core (0.1.0):
+  - MoyaHandyJSON/Core (0.1.1):
     - HandyJSON
     - Moya
-  - MoyaHandyJSON/RxSwift (0.1.0):
+  - MoyaHandyJSON/RxSwift (0.1.1):
     - Moya/RxSwift
     - MoyaHandyJSON/Core
     - RxSwift
@@ -53,7 +53,7 @@ SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  MoyaHandyJSON: 658a557bba6a6c5eb03ae420ec285d437ba0bad6
+  MoyaHandyJSON: 3a39b58a23657845ab3e6cfd871053f1597f133e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
@@ -61,4 +61,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e228abada0dd16d733b2f0b596535ad96b667659
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F45F72E25BD757B0061E07F /* Single+RxDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45F72D25BD757B0061E07F /* Single+RxDataSources.swift */; };
 		1FED625225BAB30500F0B900 /* HttpBinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED625025BAB30400F0B900 /* HttpBinModel.swift */; };
 		1FED625325BAB30500F0B900 /* HttpBinApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED625125BAB30400F0B900 /* HttpBinApi.swift */; };
 		1FED62C725BACCE500F0B900 /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C625BACCE500F0B900 /* MoyaViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		107B31094D4DCE2674BB1C96 /* Pods_MoyaHandyJSON_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaHandyJSON_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11887D2268D3631608AB694B /* Pods-MoyaHandyJSON_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaHandyJSON_Example.debug.xcconfig"; path = "Target Support Files/Pods-MoyaHandyJSON_Example/Pods-MoyaHandyJSON_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1F45F72D25BD757B0061E07F /* Single+RxDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+RxDataSources.swift"; sourceTree = "<group>"; };
 		1FED625025BAB30400F0B900 /* HttpBinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpBinModel.swift; sourceTree = "<group>"; };
 		1FED625125BAB30400F0B900 /* HttpBinApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpBinApi.swift; sourceTree = "<group>"; };
 		1FED62C625BACCE500F0B900 /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				1FED62C625BACCE500F0B900 /* MoyaViewController.swift */,
 				1FED62C925BACD0400F0B900 /* RxSwiftViewController.swift */,
 				1FED62D025BACD2B00F0B900 /* RxDataSourcesViewController.swift */,
+				1F45F72D25BD757B0061E07F /* Single+RxDataSources.swift */,
 				1FED62D725BAD5D100F0B900 /* WeatherApi.swift */,
 				1FED62DA25BADB2D00F0B900 /* WeatherModel.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -243,6 +246,7 @@
 				1FED62CA25BACD0400F0B900 /* RxSwiftViewController.swift in Sources */,
 				1FED62DB25BADB2D00F0B900 /* WeatherModel.swift in Sources */,
 				1FED625225BAB30500F0B900 /* HttpBinModel.swift in Sources */,
+				1F45F72E25BD757B0061E07F /* Single+RxDataSources.swift in Sources */,
 				1FED62D825BAD5D100F0B900 /* WeatherApi.swift in Sources */,
 				1FED625325BAB30500F0B900 /* HttpBinApi.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

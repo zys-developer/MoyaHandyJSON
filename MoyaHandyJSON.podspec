@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoyaHandyJSON'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Moya extensions that allow the response to be decoded into objects using the HandyJSON.'
 
   s.description      = <<-DESC
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.default_subspec = "Core"
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
   
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/Core/*.swift"
