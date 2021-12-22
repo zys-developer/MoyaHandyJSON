@@ -1,34 +1,33 @@
 PODS:
-  - Alamofire (4.9.1)
-  - Differentiator (3.1.0)
+  - Alamofire (5.5.0)
+  - Differentiator (4.0.1)
   - HandyJSON (5.0.2)
-  - Moya (13.0.1):
-    - Moya/Core (= 13.0.1)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
     - Moya/Core
-    - RxSwift (~> 4.0)
+    - RxSwift (~> 5.0)
   - MoyaHandyJSON/Core (0.1.2):
     - HandyJSON
-    - Moya
+    - Moya (~> 14)
   - MoyaHandyJSON/RxSwift (0.1.2):
-    - Moya/RxSwift
+    - Moya/RxSwift (~> 14)
     - MoyaHandyJSON/Core
     - RxSwift
-  - Result (4.1.0)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.5.0)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
 
 DEPENDENCIES:
-  - HandyJSON
-  - Moya/RxSwift
   - MoyaHandyJSON/RxSwift (from `../`)
   - RxCocoa
   - RxDataSources
@@ -39,9 +38,9 @@ SPEC REPOS:
     - Differentiator
     - HandyJSON
     - Moya
-    - Result
     - RxCocoa
     - RxDataSources
+    - RxRelay
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -49,16 +48,16 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  MoyaHandyJSON: 5dc2e39b262a4d131f4361adc6003bc1c68eb4b1
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  MoyaHandyJSON: 50039e83a5bf5c2d2343d9954b0ad2eb28589add
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
 
-PODFILE CHECKSUM: 5567f5c1d661d3808832802cd324f2d062576ef7
+PODFILE CHECKSUM: ad261b72c6162ea168b58436089a188b96e57e19
 
 COCOAPODS: 1.11.2

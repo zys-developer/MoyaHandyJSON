@@ -27,15 +27,15 @@ Pod::Spec.new do |s|
   
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/Core/*.swift"
-    ss.dependency "Moya"
     ss.dependency "HandyJSON"
+    ss.dependency "Moya", '~> 14'
   end
 
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Sources/RxSwift/*.swift"
     ss.dependency "MoyaHandyJSON/Core"
     ss.dependency "RxSwift"
-    ss.dependency "Moya/RxSwift"
+    ss.dependency "Moya/RxSwift", '~> 14'
   end
   
 end
