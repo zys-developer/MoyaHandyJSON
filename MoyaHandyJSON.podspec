@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoyaHandyJSON'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Moya extensions that allow the response to be decoded into objects using the HandyJSON.'
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.author           = { 'zys-developer' => 'zys_dev@163.com' }
   s.source           = { :git => 'https://github.com/zys-developer/MoyaHandyJSON.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.default_subspec = "Core"
   s.swift_version = '5.0'
   
