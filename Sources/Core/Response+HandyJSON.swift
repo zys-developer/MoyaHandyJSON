@@ -24,11 +24,11 @@ public extension Response {
     ///   - designatedPath: 指定路径, 即将该路径下的内容反序列化为模型数组
     /// - Throws: MoyaError.jsonMapping
     /// - Returns: 模型数组
-    func mapArray<T: HandyJSON>(_ type: T.Type, designatedPath: String? = nil) throws -> [T?] {
+    func mapArray<T: HandyJSON>(_ type: T.Type, designatedPath: String? = nil) throws -> [T] {
         guard let dataString = String(data: self.data, encoding: .utf8),
               let object = [T].deserialize(from: dataString, designatedPath: designatedPath)
         else { throw MoyaError.jsonMapping(self) }
-        return object
+        return object.compactMap({ $0 })
     }
     
 }

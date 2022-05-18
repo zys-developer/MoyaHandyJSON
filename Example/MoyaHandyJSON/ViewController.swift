@@ -29,17 +29,12 @@ class ViewController: UIViewController {
             // designatedPath是要展开的节点,可以展开多个节点,用.隔开
             .mapArray(SlideModel.self, designatedPath: "slideshow.slides")
             // 捕获错误, 否则遇到断网等情况时会崩溃
-            .catchError({ (_) -> PrimitiveSequence<SingleTrait, [SlideModel?]> in
-                // 这里可以做一些处理, 比如错误提示
-                // ...
-                // 给一个默认的数据
-                .just([])
-            })
+            .catchErrorJustReturn([])
             .asObservable()
         // 将数据绑定到单元格上
         items.bind(to: tableView.rx.items) { (tableView, row, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-            cell.textLabel?.text = element?.title
+            cell.textLabel?.text = element.title
             return cell
         }
         .disposed(by: disposeBag)

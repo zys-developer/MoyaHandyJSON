@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoyaHandyJSON'
-  s.version          = '0.1.2'
+  s.version          = '1.0.0'
   s.summary          = 'Moya extensions that allow the response to be decoded into objects using the HandyJSON.'
 
   s.description      = <<-DESC
@@ -28,14 +28,13 @@ Pod::Spec.new do |s|
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/Core/*.swift"
     ss.dependency "HandyJSON"
-    ss.dependency "Moya", '~> 14'
+    ss.dependency "Moya", '~> 14.0'
   end
 
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Sources/RxSwift/*.swift"
     ss.dependency "MoyaHandyJSON/Core"
-    ss.dependency "RxSwift"
-    ss.dependency "Moya/RxSwift", '~> 14'
+    ss.dependency "Moya/RxSwift", '~> 14.0'
   end
   
 end

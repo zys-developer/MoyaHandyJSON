@@ -24,7 +24,7 @@ class MoyaViewController: UIViewController {
                 if let weathers = try? res.mapArray(WeatherModel.self, designatedPath: "data.forecast") {
                     if let weather = weathers.first {
                         // 显示北京的天气
-                        label.text = "\(weather?.date ?? "")\n\(weather?.type ?? "")\n\(weather?.high ?? "高温未知"), \(weather?.low ?? "低温未知")"
+                        label.text = "\(weather.date ?? "")\n\(weather.type ?? "")\n\(weather.high ?? "高温未知"), \(weather.low ?? "低温未知")"
                     } else {
                         label.text = "天气获取失败(2)"
                     }
