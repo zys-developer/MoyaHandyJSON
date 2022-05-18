@@ -29,7 +29,7 @@ class RxSwiftViewController: UIViewController {
             // designatedPath是要展开的节点,可以展开多个节点,用.隔开
             .mapArray(WeatherModel.self, designatedPath: "data.forecast")
             // 捕获错误, 否则遇到断网等情况时会崩溃
-            .catchErrorJustReturn([])
+            .catchAndReturn([])
             .asObservable()
         // 将数据绑定到单元格上
         items.bind(to: tableView.rx.items) { (tableView, row, element) in
